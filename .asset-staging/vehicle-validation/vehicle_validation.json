@@ -1,0 +1,4221 @@
+{
+  "file": "/Volumes/DHRUV/Beyond_School/.asset-staging/spectral-gt-rs/spectral_gt_rs_master.blend",
+  "units": {
+    "system": "METRIC",
+    "scale_length": 1.0,
+    "length_unit": "METERS"
+  },
+  "collections": [
+    "01_Body_Panels",
+    "02_Glass",
+    "03_Aero_Trim",
+    "04_Wheels_Brakes",
+    "05_Interior",
+    "06_Lights",
+    "07_Mechanics",
+    "08_Animation_Controls",
+    "CAMERAS",
+    "CAR_EXPORT",
+    "STUDIO_LIGHTS",
+    "STUDIO_LIGHTS_NIGHT",
+    "STUDIO_STAGE"
+  ],
+  "objects_total": 285,
+  "mesh_objects": 254,
+  "materials_total": 26,
+  "cameras": {
+    "CAM_Beauty_ThreeQuarter": {
+      "location": [
+        7.400000095367432,
+        -9.5,
+        2.75
+      ],
+      "lens": 58.0
+    },
+    "CAM_Cockpit_Detail": {
+      "location": [
+        -0.15000000596046448,
+        -2.3499999046325684,
+        2.1500000953674316
+      ],
+      "lens": 48.0
+    },
+    "CAM_Front_Detail": {
+      "location": [
+        7.800000190734863,
+        -0.3499999940395355,
+        1.5499999523162842
+      ],
+      "lens": 70.0
+    },
+    "CAM_Night_Hero": {
+      "location": [
+        6.900000095367432,
+        -9.199999809265137,
+        2.3499999046325684
+      ],
+      "lens": 62.0
+    },
+    "CAM_Profile_Detail": {
+      "location": [
+        0.15000000596046448,
+        -8.399999618530273,
+        1.350000023841858
+      ],
+      "lens": 72.0
+    },
+    "CAM_Rear_Detail": {
+      "location": [
+        -7.699999809265137,
+        0.550000011920929,
+        1.4800000190734863
+      ],
+      "lens": 70.0
+    }
+  },
+  "actions": {
+    "Doors_PingPong": {
+      "frames": [
+        1.0,
+        80.0
+      ],
+      "fcurves": 0
+    },
+    "Doors_PingPong.001": {
+      "frames": [
+        1.0,
+        80.0
+      ],
+      "fcurves": 0
+    },
+    "Hood_Service_PingPong": {
+      "frames": [
+        1.0,
+        90.0
+      ],
+      "fcurves": 0
+    },
+    "Steering_Input_PingPong": {
+      "frames": [
+        1.0,
+        60.0
+      ],
+      "fcurves": 0
+    }
+  },
+  "key_objects": {
+    "Driver": [
+      "Driver_Headrest",
+      "Driver_Seat_Back",
+      "Driver_Seat_Base",
+      "Driver_Seat_Bolster_Inner",
+      "Driver_Seat_Bolster_Outer",
+      "Driver_Shoulder_Belt"
+    ],
+    "Passenger": [
+      "Passenger_Headrest",
+      "Passenger_Seat_Back",
+      "Passenger_Seat_Base",
+      "Passenger_Seat_Bolster_Inner",
+      "Passenger_Seat_Bolster_Outer",
+      "Passenger_Shoulder_Belt"
+    ],
+    "Steering_Wheel": [
+      "Steering_Wheel"
+    ],
+    "Digital_Gauge_Cluster": [
+      "Digital_Gauge_Cluster"
+    ],
+    "Dashboard_Core": [
+      "Dashboard_Core"
+    ],
+    "Dashboard_Accent": [
+      "Dashboard_Accent"
+    ],
+    "Front_Windshield": [
+      "Front_Windshield"
+    ],
+    "Rear_Windshield": [
+      "Rear_Windshield"
+    ],
+    "Rear_View_Mirror": [
+      "Rear_View_Mirror"
+    ],
+    "L_Mirror_Shell": [
+      "L_Mirror_Shell"
+    ],
+    "R_Mirror_Shell": [
+      "R_Mirror_Shell"
+    ],
+    "L_Mirror_Stalk": [
+      "L_Mirror_Stalk"
+    ],
+    "R_Mirror_Stalk": [
+      "R_Mirror_Stalk"
+    ],
+    "HazardSwitch": [],
+    "Hazard": [],
+    "Trunk": [],
+    "Boot": [],
+    "Luggage": [],
+    "Spare": [],
+    "Tail_Light": [
+      "Tail_Light_Accent_-1",
+      "Tail_Light_Accent_1",
+      "Tail_Light_Bar_-1",
+      "Tail_Light_Bar_1",
+      "Tail_Light_Housing_-1",
+      "Tail_Light_Housing_1"
+    ],
+    "Headlight": [
+      "Headlight_Housing_-1",
+      "Headlight_Housing_1",
+      "Headlight_LED_-1_1",
+      "Headlight_LED_-1_2",
+      "Headlight_LED_-1_3",
+      "Headlight_LED_1_1",
+      "Headlight_LED_1_2",
+      "Headlight_LED_1_3",
+      "Headlight_Main_-1",
+      "Headlight_Main_1"
+    ],
+    "Front_Left": [
+      "Front_Left_Brake_Caliper",
+      "Front_Left_Brake_Disc",
+      "Front_Left_Brake_Hat",
+      "Front_Left_Brake_Line",
+      "Front_Left_Coil_Spring_1",
+      "Front_Left_Coil_Spring_2",
+      "Front_Left_Coil_Spring_3",
+      "Front_Left_Coil_Spring_4",
+      "Front_Left_Coil_Spring_5",
+      "Front_Left_Damper",
+      "Front_Left_Damper_Cap",
+      "Front_Left_Hub",
+      "Front_Left_Hub_Cap",
+      "Front_Left_Lower_Control_Arm",
+      "Front_Left_Rim_Base",
+      "Front_Left_Sidewall_Bead",
+      "Front_Left_Spoke_1",
+      "Front_Left_Spoke_2",
+      "Front_Left_Spoke_3",
+      "Front_Left_Spoke_4",
+      "Front_Left_Spoke_5",
+      "Front_Left_Spoke_6",
+      "Front_Left_Tire",
+      "Front_Left_Tire_Block_1",
+      "Front_Left_Tire_Block_2",
+      "Front_Left_Tire_Block_3",
+      "Front_Left_Tire_Block_4",
+      "Front_Left_Toe_Link",
+      "Front_Left_Upper_Control_Arm"
+    ],
+    "Front_Right": [
+      "Front_Right_Brake_Caliper",
+      "Front_Right_Brake_Disc",
+      "Front_Right_Brake_Hat",
+      "Front_Right_Brake_Line",
+      "Front_Right_Coil_Spring_1",
+      "Front_Right_Coil_Spring_2",
+      "Front_Right_Coil_Spring_3",
+      "Front_Right_Coil_Spring_4",
+      "Front_Right_Coil_Spring_5",
+      "Front_Right_Damper",
+      "Front_Right_Damper_Cap",
+      "Front_Right_Hub",
+      "Front_Right_Hub_Cap",
+      "Front_Right_Lower_Control_Arm",
+      "Front_Right_Rim_Base",
+      "Front_Right_Sidewall_Bead",
+      "Front_Right_Spoke_1",
+      "Front_Right_Spoke_2",
+      "Front_Right_Spoke_3",
+      "Front_Right_Spoke_4",
+      "Front_Right_Spoke_5",
+      "Front_Right_Spoke_6",
+      "Front_Right_Tire",
+      "Front_Right_Tire_Block_1",
+      "Front_Right_Tire_Block_2",
+      "Front_Right_Tire_Block_3",
+      "Front_Right_Tire_Block_4",
+      "Front_Right_Toe_Link",
+      "Front_Right_Upper_Control_Arm"
+    ],
+    "Rear_Left": [
+      "Rear_Left_Brake_Caliper",
+      "Rear_Left_Brake_Disc",
+      "Rear_Left_Brake_Hat",
+      "Rear_Left_Brake_Line",
+      "Rear_Left_Coil_Spring_1",
+      "Rear_Left_Coil_Spring_2",
+      "Rear_Left_Coil_Spring_3",
+      "Rear_Left_Coil_Spring_4",
+      "Rear_Left_Coil_Spring_5",
+      "Rear_Left_Damper",
+      "Rear_Left_Damper_Cap",
+      "Rear_Left_Hub",
+      "Rear_Left_Hub_Cap",
+      "Rear_Left_Lower_Control_Arm",
+      "Rear_Left_Rim_Base",
+      "Rear_Left_Sidewall_Bead",
+      "Rear_Left_Spoke_1",
+      "Rear_Left_Spoke_2",
+      "Rear_Left_Spoke_3",
+      "Rear_Left_Spoke_4",
+      "Rear_Left_Spoke_5",
+      "Rear_Left_Spoke_6",
+      "Rear_Left_Tire",
+      "Rear_Left_Tire_Block_1",
+      "Rear_Left_Tire_Block_2",
+      "Rear_Left_Tire_Block_3",
+      "Rear_Left_Tire_Block_4",
+      "Rear_Left_Toe_Link",
+      "Rear_Left_Upper_Control_Arm"
+    ],
+    "Rear_Right": [
+      "Rear_Right_Brake_Caliper",
+      "Rear_Right_Brake_Disc",
+      "Rear_Right_Brake_Hat",
+      "Rear_Right_Brake_Line",
+      "Rear_Right_Coil_Spring_1",
+      "Rear_Right_Coil_Spring_2",
+      "Rear_Right_Coil_Spring_3",
+      "Rear_Right_Coil_Spring_4",
+      "Rear_Right_Coil_Spring_5",
+      "Rear_Right_Damper",
+      "Rear_Right_Damper_Cap",
+      "Rear_Right_Hub",
+      "Rear_Right_Hub_Cap",
+      "Rear_Right_Lower_Control_Arm",
+      "Rear_Right_Rim_Base",
+      "Rear_Right_Sidewall_Bead",
+      "Rear_Right_Spoke_1",
+      "Rear_Right_Spoke_2",
+      "Rear_Right_Spoke_3",
+      "Rear_Right_Spoke_4",
+      "Rear_Right_Spoke_5",
+      "Rear_Right_Spoke_6",
+      "Rear_Right_Tire",
+      "Rear_Right_Tire_Block_1",
+      "Rear_Right_Tire_Block_2",
+      "Rear_Right_Tire_Block_3",
+      "Rear_Right_Tire_Block_4",
+      "Rear_Right_Toe_Link",
+      "Rear_Right_Upper_Control_Arm"
+    ],
+    "Wheel": [
+      "Steering_Wheel",
+      "Wheel_Hub",
+      "Wheel_Spoke_0",
+      "Wheel_Spoke_2.0943951023931953",
+      "Wheel_Spoke_4.1887902047863905"
+    ],
+    "Tire": [
+      "Front_Left_Tire",
+      "Front_Left_Tire_Block_1",
+      "Front_Left_Tire_Block_2",
+      "Front_Left_Tire_Block_3",
+      "Front_Left_Tire_Block_4",
+      "Front_Right_Tire",
+      "Front_Right_Tire_Block_1",
+      "Front_Right_Tire_Block_2",
+      "Front_Right_Tire_Block_3",
+      "Front_Right_Tire_Block_4",
+      "Rear_Left_Tire",
+      "Rear_Left_Tire_Block_1",
+      "Rear_Left_Tire_Block_2",
+      "Rear_Left_Tire_Block_3",
+      "Rear_Left_Tire_Block_4",
+      "Rear_Right_Tire",
+      "Rear_Right_Tire_Block_1",
+      "Rear_Right_Tire_Block_2",
+      "Rear_Right_Tire_Block_3",
+      "Rear_Right_Tire_Block_4"
+    ],
+    "Door": [
+      "Door_Accent_-0.72",
+      "Door_Accent_0.72",
+      "Door_Carbon_Insert_L",
+      "Door_Carbon_Insert_R",
+      "DOOR_L_CTRL",
+      "Door_Light_Accent_L",
+      "Door_Light_Accent_R",
+      "Door_Panel_-0.72",
+      "Door_Panel_0.72",
+      "DOOR_R_CTRL",
+      "Door_Skin_L",
+      "Door_Skin_R",
+      "L_Door_Handle",
+      "R_Door_Handle"
+    ],
+    "DOOR_L_CTRL": [
+      "DOOR_L_CTRL"
+    ],
+    "DOOR_R_CTRL": [
+      "DOOR_R_CTRL"
+    ],
+    "STEERING_INPUT_CTRL": [
+      "STEERING_INPUT_CTRL"
+    ],
+    "HOOD_SERVICE_CTRL": [
+      "HOOD_SERVICE_CTRL"
+    ]
+  },
+  "bounds": {
+    "min": [
+      -15.0,
+      -15.0,
+      -0.010000060312449932
+    ],
+    "max": [
+      15.0,
+      15.0,
+      8.0
+    ],
+    "dimensions": [
+      30.0,
+      30.0,
+      8.010000228881836
+    ]
+  },
+  "relevant_details": {
+    "DOOR_L_CTRL": {
+      "type": "EMPTY",
+      "location": [
+        0.41999998688697815,
+        -0.8799999952316284,
+        0.8199999928474426
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": []
+    },
+    "DOOR_R_CTRL": {
+      "type": "EMPTY",
+      "location": [
+        0.41999998688697815,
+        0.8799999952316284,
+        0.8199999928474426
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": []
+    },
+    "Dashboard_Accent": {
+      "type": "MESH",
+      "location": [
+        0.8600000143051147,
+        0.0,
+        1.1699999570846558
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Ice Blue Emission"
+      ]
+    },
+    "Dashboard_Core": {
+      "type": "MESH",
+      "location": [
+        0.6399999856948853,
+        0.0,
+        1.0299999713897705
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Soft Touch Black"
+      ]
+    },
+    "Digital_Gauge_Cluster": {
+      "type": "MESH",
+      "location": [
+        0.5699999928474426,
+        -0.49000000953674316,
+        1.2599999904632568
+      ],
+      "rotation": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Cockpit Display"
+      ]
+    },
+    "Door_Accent_-0.72": {
+      "type": "MESH",
+      "location": [
+        0.029999999329447746,
+        -0.7450000047683716,
+        1.0499999523162842
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Ice Blue Emission"
+      ]
+    },
+    "Door_Accent_0.72": {
+      "type": "MESH",
+      "location": [
+        0.029999999329447746,
+        0.7450000047683716,
+        1.0499999523162842
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Ice Blue Emission"
+      ]
+    },
+    "Door_Carbon_Insert_L": {
+      "type": "MESH",
+      "location": [
+        -0.5499999523162842,
+        -0.16499996185302734,
+        0.009999990463256836
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": "DOOR_L_CTRL",
+      "materials": [
+        "Carbon Fiber \u2014 Directional Weave"
+      ]
+    },
+    "Door_Carbon_Insert_R": {
+      "type": "MESH",
+      "location": [
+        -0.5499999523162842,
+        0.16499996185302734,
+        0.009999990463256836
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": "DOOR_R_CTRL",
+      "materials": [
+        "Carbon Fiber \u2014 Directional Weave"
+      ]
+    },
+    "Door_Light_Accent_L": {
+      "type": "MESH",
+      "location": [
+        -0.3699999749660492,
+        -0.16999995708465576,
+        0.1600000262260437
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": "DOOR_L_CTRL",
+      "materials": [
+        "Ice Blue Emission"
+      ]
+    },
+    "Door_Light_Accent_R": {
+      "type": "MESH",
+      "location": [
+        -0.3699999749660492,
+        0.16999995708465576,
+        0.1600000262260437
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": "DOOR_R_CTRL",
+      "materials": [
+        "Ice Blue Emission"
+      ]
+    },
+    "Door_Panel_-0.72": {
+      "type": "MESH",
+      "location": [
+        -0.2199999988079071,
+        -0.7200000286102295,
+        0.9200000166893005
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Carbon Leather"
+      ]
+    },
+    "Door_Panel_0.72": {
+      "type": "MESH",
+      "location": [
+        -0.2199999988079071,
+        0.7200000286102295,
+        0.9200000166893005
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Carbon Leather"
+      ]
+    },
+    "Door_Skin_L": {
+      "type": "MESH",
+      "location": [
+        -0.6200000047683716,
+        -0.12999999523162842,
+        -0.029999971389770508
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": "DOOR_L_CTRL",
+      "materials": [
+        "Spectral Blue \u2014 Clearcoat"
+      ]
+    },
+    "Door_Skin_R": {
+      "type": "MESH",
+      "location": [
+        -0.6200000047683716,
+        0.12999999523162842,
+        -0.029999971389770508
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": "DOOR_R_CTRL",
+      "materials": [
+        "Spectral Blue \u2014 Clearcoat"
+      ]
+    },
+    "Driver_Headrest": {
+      "type": "MESH",
+      "location": [
+        -0.8600000143051147,
+        -0.4300000071525574,
+        1.4900000095367432
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Burgundy Performance Leather"
+      ]
+    },
+    "Driver_Seat_Back": {
+      "type": "MESH",
+      "location": [
+        -0.699999988079071,
+        -0.4300000071525574,
+        1.149999976158142
+      ],
+      "rotation": [
+        0.0,
+        -0.20943951606750488,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Burgundy Performance Leather"
+      ]
+    },
+    "Driver_Seat_Base": {
+      "type": "MESH",
+      "location": [
+        -0.3100000023841858,
+        -0.4300000071525574,
+        0.8700000047683716
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Burgundy Performance Leather"
+      ]
+    },
+    "Driver_Seat_Bolster_Inner": {
+      "type": "MESH",
+      "location": [
+        -0.3400000035762787,
+        -0.2199999988079071,
+        0.9700000286102295
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Carbon Leather"
+      ]
+    },
+    "Driver_Seat_Bolster_Outer": {
+      "type": "MESH",
+      "location": [
+        -0.3400000035762787,
+        -0.6499999761581421,
+        0.9700000286102295
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Carbon Leather"
+      ]
+    },
+    "Driver_Shoulder_Belt": {
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": []
+    },
+    "Front_Left_Brake_Caliper": {
+      "type": "MESH",
+      "location": [
+        1.600000023841858,
+        -1.1679999828338623,
+        0.550000011920929
+      ],
+      "rotation": [
+        0.0,
+        0.0872664600610733,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Caliper Red"
+      ]
+    },
+    "Front_Left_Brake_Disc": {
+      "type": "MESH",
+      "location": [
+        1.3700000047683716,
+        -1.0299999713897705,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Brushed Aluminum"
+      ]
+    },
+    "Front_Left_Brake_Hat": {
+      "type": "MESH",
+      "location": [
+        1.3700000047683716,
+        -1.062999963760376,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Carbon Fiber \u2014 Directional Weave"
+      ]
+    },
+    "Front_Left_Brake_Line": {
+      "type": "MESH",
+      "location": [
+        1.4849998950958252,
+        -0.9049999713897705,
+        0.7300000190734863
+      ],
+      "rotation": [
+        0.6196393370628357,
+        7.656757361473865e-08,
+        -2.488746166229248
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tail Lamp Red"
+      ]
+    },
+    "Front_Left_Coil_Spring_1": {
+      "type": "MESH",
+      "location": [
+        1.309999942779541,
+        -0.8199999928474426,
+        0.6399999856948853
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Spring"
+      ]
+    },
+    "Front_Left_Coil_Spring_2": {
+      "type": "MESH",
+      "location": [
+        1.309999942779541,
+        -0.8199999928474426,
+        0.699999988079071
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Spring"
+      ]
+    },
+    "Front_Left_Coil_Spring_3": {
+      "type": "MESH",
+      "location": [
+        1.309999942779541,
+        -0.8199999928474426,
+        0.7599999904632568
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Spring"
+      ]
+    },
+    "Front_Left_Coil_Spring_4": {
+      "type": "MESH",
+      "location": [
+        1.309999942779541,
+        -0.8199999928474426,
+        0.8199999928474426
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Spring"
+      ]
+    },
+    "Front_Left_Coil_Spring_5": {
+      "type": "MESH",
+      "location": [
+        1.309999942779541,
+        -0.8199999928474426,
+        0.8799999952316284
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Spring"
+      ]
+    },
+    "Front_Left_Damper": {
+      "type": "MESH",
+      "location": [
+        1.309999942779541,
+        -0.8199999928474426,
+        0.7799999713897705
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        -0.06981316953897476
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Engine Machined Metal"
+      ]
+    },
+    "Front_Left_Damper_Cap": {
+      "type": "MESH",
+      "location": [
+        1.309999942779541,
+        -0.8199999928474426,
+        0.949999988079071
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        -0.06981316953897476
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Caliper Red"
+      ]
+    },
+    "Front_Left_Hub": {
+      "type": "MESH",
+      "location": [
+        1.3700000047683716,
+        -1.225000023841858,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Front_Left_Hub_Cap": {
+      "type": "MESH",
+      "location": [
+        1.3700000047683716,
+        -1.253000020980835,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Badge Gold"
+      ]
+    },
+    "Front_Left_Lower_Control_Arm": {
+      "type": "MESH",
+      "location": [
+        1.3700000047683716,
+        -0.8650000095367432,
+        0.5950000286102295
+      ],
+      "rotation": [
+        1.4989386796951294,
+        -3.769838485823129e-08,
+        1.0427217483520508
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Black"
+      ]
+    },
+    "Front_Left_Rim_Base": {
+      "type": "MESH",
+      "location": [
+        1.3700000047683716,
+        -1.149999976158142,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Brushed Aluminum"
+      ]
+    },
+    "Front_Left_Sidewall_Bead": {
+      "type": "MESH",
+      "location": [
+        1.3700000047683716,
+        -1.149999976158142,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.570796251296997,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tire Sidewall Ink"
+      ]
+    },
+    "Front_Left_Spoke_1": {
+      "type": "MESH",
+      "location": [
+        1.5258846282958984,
+        -1.2070000171661377,
+        0.6200000047683716
+      ],
+      "rotation": [
+        0.0,
+        -0.5235987901687622,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Front_Left_Spoke_2": {
+      "type": "MESH",
+      "location": [
+        1.3700000047683716,
+        -1.2070000171661377,
+        0.7099999785423279
+      ],
+      "rotation": [
+        0.0,
+        -1.5707963705062866,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Front_Left_Spoke_3": {
+      "type": "MESH",
+      "location": [
+        1.2141153812408447,
+        -1.2070000171661377,
+        0.6200000047683716
+      ],
+      "rotation": [
+        0.0,
+        -2.6179938316345215,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Front_Left_Spoke_4": {
+      "type": "MESH",
+      "location": [
+        1.2141153812408447,
+        -1.2070000171661377,
+        0.4399999976158142
+      ],
+      "rotation": [
+        0.0,
+        -3.665191411972046,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Front_Left_Spoke_5": {
+      "type": "MESH",
+      "location": [
+        1.3700000047683716,
+        -1.2070000171661377,
+        0.3499999940395355
+      ],
+      "rotation": [
+        0.0,
+        -4.71238899230957,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Front_Left_Spoke_6": {
+      "type": "MESH",
+      "location": [
+        1.5258846282958984,
+        -1.2070000171661377,
+        0.4399999976158142
+      ],
+      "rotation": [
+        0.0,
+        -5.759586334228516,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Front_Left_Tire": {
+      "type": "MESH",
+      "location": [
+        1.3700000047683716,
+        -1.0149999856948853,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.570796251296997,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Performance Rubber"
+      ]
+    },
+    "Front_Left_Tire_Block_1": {
+      "type": "MESH",
+      "location": [
+        1.7555749416351318,
+        -1.156000018119812,
+        0.7419716119766235
+      ],
+      "rotation": [
+        0.0,
+        -0.5026548504829407,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tire Sidewall Ink"
+      ]
+    },
+    "Front_Left_Tire_Block_2": {
+      "type": "MESH",
+      "location": [
+        1.5319747924804688,
+        -1.156000018119812,
+        0.9391016364097595
+      ],
+      "rotation": [
+        0.0,
+        -1.19380521774292,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tire Sidewall Ink"
+      ]
+    },
+    "Front_Left_Tire_Block_3": {
+      "type": "MESH",
+      "location": [
+        1.2340325117111206,
+        -1.156000018119812,
+        0.9484648704528809
+      ],
+      "rotation": [
+        0.0,
+        -1.884955644607544,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tire Sidewall Ink"
+      ]
+    },
+    "Front_Left_Tire_Block_4": {
+      "type": "MESH",
+      "location": [
+        0.9984956979751587,
+        -1.156000018119812,
+        0.7657638192176819
+      ],
+      "rotation": [
+        0.0,
+        -2.576106071472168,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tire Sidewall Ink"
+      ]
+    },
+    "Front_Left_Toe_Link": {
+      "type": "MESH",
+      "location": [
+        1.350000023841858,
+        -0.8650000095367432,
+        0.6650000214576721
+      ],
+      "rotation": [
+        1.5875149965286255,
+        -1.2828338924464333e-07,
+        1.212025761604309
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Spring"
+      ]
+    },
+    "Front_Left_Upper_Control_Arm": {
+      "type": "MESH",
+      "location": [
+        1.3600000143051147,
+        -0.8650000095367432,
+        0.7599999904632568
+      ],
+      "rotation": [
+        1.8280081748962402,
+        -9.651090238094184e-08,
+        -0.8086497783660889
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Engine Machined Metal"
+      ]
+    },
+    "Front_Right_Brake_Caliper": {
+      "type": "MESH",
+      "location": [
+        1.600000023841858,
+        1.1679999828338623,
+        0.550000011920929
+      ],
+      "rotation": [
+        0.0,
+        0.0872664600610733,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Caliper Red"
+      ]
+    },
+    "Front_Right_Brake_Disc": {
+      "type": "MESH",
+      "location": [
+        1.3700000047683716,
+        1.0299999713897705,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Brushed Aluminum"
+      ]
+    },
+    "Front_Right_Brake_Hat": {
+      "type": "MESH",
+      "location": [
+        1.3700000047683716,
+        1.062999963760376,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Carbon Fiber \u2014 Directional Weave"
+      ]
+    },
+    "Front_Right_Brake_Line": {
+      "type": "MESH",
+      "location": [
+        1.4849998950958252,
+        0.9049999713897705,
+        0.7300000190734863
+      ],
+      "rotation": [
+        0.6196392774581909,
+        1.3610630844596017e-08,
+        -0.65284663438797
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tail Lamp Red"
+      ]
+    },
+    "Front_Right_Coil_Spring_1": {
+      "type": "MESH",
+      "location": [
+        1.309999942779541,
+        0.8199999928474426,
+        0.6399999856948853
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Spring"
+      ]
+    },
+    "Front_Right_Coil_Spring_2": {
+      "type": "MESH",
+      "location": [
+        1.309999942779541,
+        0.8199999928474426,
+        0.699999988079071
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Spring"
+      ]
+    },
+    "Front_Right_Coil_Spring_3": {
+      "type": "MESH",
+      "location": [
+        1.309999942779541,
+        0.8199999928474426,
+        0.7599999904632568
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Spring"
+      ]
+    },
+    "Front_Right_Coil_Spring_4": {
+      "type": "MESH",
+      "location": [
+        1.309999942779541,
+        0.8199999928474426,
+        0.8199999928474426
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Spring"
+      ]
+    },
+    "Front_Right_Coil_Spring_5": {
+      "type": "MESH",
+      "location": [
+        1.309999942779541,
+        0.8199999928474426,
+        0.8799999952316284
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Spring"
+      ]
+    },
+    "Front_Right_Damper": {
+      "type": "MESH",
+      "location": [
+        1.309999942779541,
+        0.8199999928474426,
+        0.7799999713897705
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.06981316953897476
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Engine Machined Metal"
+      ]
+    },
+    "Front_Right_Damper_Cap": {
+      "type": "MESH",
+      "location": [
+        1.309999942779541,
+        0.8199999928474426,
+        0.949999988079071
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.06981316953897476
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Caliper Red"
+      ]
+    },
+    "Front_Right_Hub": {
+      "type": "MESH",
+      "location": [
+        1.3700000047683716,
+        1.225000023841858,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Front_Right_Hub_Cap": {
+      "type": "MESH",
+      "location": [
+        1.3700000047683716,
+        1.253000020980835,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Badge Gold"
+      ]
+    },
+    "Front_Right_Lower_Control_Arm": {
+      "type": "MESH",
+      "location": [
+        1.3700000047683716,
+        0.8650000095367432,
+        0.5950000286102295
+      ],
+      "rotation": [
+        1.498938798904419,
+        3.768437650819578e-08,
+        2.0988709926605225
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Black"
+      ]
+    },
+    "Front_Right_Rim_Base": {
+      "type": "MESH",
+      "location": [
+        1.3700000047683716,
+        1.149999976158142,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Brushed Aluminum"
+      ]
+    },
+    "Front_Right_Sidewall_Bead": {
+      "type": "MESH",
+      "location": [
+        1.3700000047683716,
+        1.149999976158142,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.570796251296997,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tire Sidewall Ink"
+      ]
+    },
+    "Front_Right_Spoke_1": {
+      "type": "MESH",
+      "location": [
+        1.5258846282958984,
+        1.2070000171661377,
+        0.6200000047683716
+      ],
+      "rotation": [
+        0.0,
+        -0.5235987901687622,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Front_Right_Spoke_2": {
+      "type": "MESH",
+      "location": [
+        1.3700000047683716,
+        1.2070000171661377,
+        0.7099999785423279
+      ],
+      "rotation": [
+        0.0,
+        -1.5707963705062866,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Front_Right_Spoke_3": {
+      "type": "MESH",
+      "location": [
+        1.2141153812408447,
+        1.2070000171661377,
+        0.6200000047683716
+      ],
+      "rotation": [
+        0.0,
+        -2.6179938316345215,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Front_Right_Spoke_4": {
+      "type": "MESH",
+      "location": [
+        1.2141153812408447,
+        1.2070000171661377,
+        0.4399999976158142
+      ],
+      "rotation": [
+        0.0,
+        -3.665191411972046,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Front_Right_Spoke_5": {
+      "type": "MESH",
+      "location": [
+        1.3700000047683716,
+        1.2070000171661377,
+        0.3499999940395355
+      ],
+      "rotation": [
+        0.0,
+        -4.71238899230957,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Front_Right_Spoke_6": {
+      "type": "MESH",
+      "location": [
+        1.5258846282958984,
+        1.2070000171661377,
+        0.4399999976158142
+      ],
+      "rotation": [
+        0.0,
+        -5.759586334228516,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Front_Right_Tire": {
+      "type": "MESH",
+      "location": [
+        1.3700000047683716,
+        1.0149999856948853,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.570796251296997,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Performance Rubber"
+      ]
+    },
+    "Front_Right_Tire_Block_1": {
+      "type": "MESH",
+      "location": [
+        1.7555749416351318,
+        1.156000018119812,
+        0.7419716119766235
+      ],
+      "rotation": [
+        0.0,
+        -0.5026548504829407,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tire Sidewall Ink"
+      ]
+    },
+    "Front_Right_Tire_Block_2": {
+      "type": "MESH",
+      "location": [
+        1.5319747924804688,
+        1.156000018119812,
+        0.9391016364097595
+      ],
+      "rotation": [
+        0.0,
+        -1.19380521774292,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tire Sidewall Ink"
+      ]
+    },
+    "Front_Right_Tire_Block_3": {
+      "type": "MESH",
+      "location": [
+        1.2340325117111206,
+        1.156000018119812,
+        0.9484648704528809
+      ],
+      "rotation": [
+        0.0,
+        -1.884955644607544,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tire Sidewall Ink"
+      ]
+    },
+    "Front_Right_Tire_Block_4": {
+      "type": "MESH",
+      "location": [
+        0.9984956979751587,
+        1.156000018119812,
+        0.7657638192176819
+      ],
+      "rotation": [
+        0.0,
+        -2.576106071472168,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tire Sidewall Ink"
+      ]
+    },
+    "Front_Right_Toe_Link": {
+      "type": "MESH",
+      "location": [
+        1.350000023841858,
+        0.8650000095367432,
+        0.6650000214576721
+      ],
+      "rotation": [
+        1.587515115737915,
+        -2.3761041134662264e-08,
+        1.9295672178268433
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Spring"
+      ]
+    },
+    "Front_Right_Upper_Control_Arm": {
+      "type": "MESH",
+      "location": [
+        1.3600000143051147,
+        0.8650000095367432,
+        0.7599999904632568
+      ],
+      "rotation": [
+        1.8280081748962402,
+        -9.802425182670049e-08,
+        -2.3329429626464844
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Engine Machined Metal"
+      ]
+    },
+    "Front_Windshield": {
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Smoked Smart Glass"
+      ]
+    },
+    "HOOD_SERVICE_CTRL": {
+      "type": "EMPTY",
+      "location": [
+        1.9299999475479126,
+        0.0,
+        0.9900000095367432
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": []
+    },
+    "Headlight_Housing_-1": {
+      "type": "MESH",
+      "location": [
+        2.380000114440918,
+        -0.6399999856948853,
+        0.7799999713897705
+      ],
+      "rotation": [
+        0.0,
+        -0.0872664600610733,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Soft Touch Black"
+      ]
+    },
+    "Headlight_Housing_1": {
+      "type": "MESH",
+      "location": [
+        2.380000114440918,
+        0.6399999856948853,
+        0.7799999713897705
+      ],
+      "rotation": [
+        0.0,
+        -0.0872664600610733,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Soft Touch Black"
+      ]
+    },
+    "Headlight_LED_-1_1": {
+      "type": "MESH",
+      "location": [
+        2.4700000286102295,
+        -0.5099999904632568,
+        0.7799999713897705
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Ice Blue Emission"
+      ]
+    },
+    "Headlight_LED_-1_2": {
+      "type": "MESH",
+      "location": [
+        2.4700000286102295,
+        -0.6399999856948853,
+        0.7799999713897705
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Ice Blue Emission"
+      ]
+    },
+    "Headlight_LED_-1_3": {
+      "type": "MESH",
+      "location": [
+        2.4700000286102295,
+        -0.7699999809265137,
+        0.7799999713897705
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Ice Blue Emission"
+      ]
+    },
+    "Headlight_LED_1_1": {
+      "type": "MESH",
+      "location": [
+        2.4700000286102295,
+        0.5099999904632568,
+        0.7799999713897705
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Ice Blue Emission"
+      ]
+    },
+    "Headlight_LED_1_2": {
+      "type": "MESH",
+      "location": [
+        2.4700000286102295,
+        0.6399999856948853,
+        0.7799999713897705
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Ice Blue Emission"
+      ]
+    },
+    "Headlight_LED_1_3": {
+      "type": "MESH",
+      "location": [
+        2.4700000286102295,
+        0.7699999809265137,
+        0.7799999713897705
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Ice Blue Emission"
+      ]
+    },
+    "Headlight_Main_-1": {
+      "type": "MESH",
+      "location": [
+        2.444999933242798,
+        -0.6399999856948853,
+        0.7799999713897705
+      ],
+      "rotation": [
+        0.0,
+        -0.0872664600610733,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Headlamp White"
+      ]
+    },
+    "Headlight_Main_1": {
+      "type": "MESH",
+      "location": [
+        2.444999933242798,
+        0.6399999856948853,
+        0.7799999713897705
+      ],
+      "rotation": [
+        0.0,
+        -0.0872664600610733,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Headlamp White"
+      ]
+    },
+    "L_Door_Handle": {
+      "type": "MESH",
+      "location": [
+        -0.15000000596046448,
+        -0.8227559924125671,
+        0.8799999952316284
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "L_Mirror_Shell": {
+      "type": "MESH",
+      "location": [
+        0.6399999856948853,
+        -0.829259991645813,
+        1.1200000047683716
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Midnight Blue \u2014 Shadow Panels"
+      ]
+    },
+    "L_Mirror_Stalk": {
+      "type": "MESH",
+      "location": [
+        0.5400000214576721,
+        -0.7886099815368652,
+        1.100000023841858
+      ],
+      "rotation": [
+        0.0,
+        0.20943951606750488,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Soft Touch Black"
+      ]
+    },
+    "Passenger_Headrest": {
+      "type": "MESH",
+      "location": [
+        -0.8600000143051147,
+        0.4300000071525574,
+        1.4900000095367432
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Burgundy Performance Leather"
+      ]
+    },
+    "Passenger_Seat_Back": {
+      "type": "MESH",
+      "location": [
+        -0.699999988079071,
+        0.4300000071525574,
+        1.149999976158142
+      ],
+      "rotation": [
+        0.0,
+        -0.20943951606750488,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Burgundy Performance Leather"
+      ]
+    },
+    "Passenger_Seat_Base": {
+      "type": "MESH",
+      "location": [
+        -0.3100000023841858,
+        0.4300000071525574,
+        0.8700000047683716
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Burgundy Performance Leather"
+      ]
+    },
+    "Passenger_Seat_Bolster_Inner": {
+      "type": "MESH",
+      "location": [
+        -0.3400000035762787,
+        0.2199999988079071,
+        0.9700000286102295
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Carbon Leather"
+      ]
+    },
+    "Passenger_Seat_Bolster_Outer": {
+      "type": "MESH",
+      "location": [
+        -0.3400000035762787,
+        0.6499999761581421,
+        0.9700000286102295
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Carbon Leather"
+      ]
+    },
+    "Passenger_Shoulder_Belt": {
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": []
+    },
+    "R_Door_Handle": {
+      "type": "MESH",
+      "location": [
+        -0.15000000596046448,
+        0.8227559924125671,
+        0.8799999952316284
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "R_Mirror_Shell": {
+      "type": "MESH",
+      "location": [
+        0.6399999856948853,
+        0.829259991645813,
+        1.1200000047683716
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Midnight Blue \u2014 Shadow Panels"
+      ]
+    },
+    "R_Mirror_Stalk": {
+      "type": "MESH",
+      "location": [
+        0.5400000214576721,
+        0.7886099815368652,
+        1.100000023841858
+      ],
+      "rotation": [
+        0.0,
+        0.20943951606750488,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Soft Touch Black"
+      ]
+    },
+    "Rear_Left_Brake_Caliper": {
+      "type": "MESH",
+      "location": [
+        -1.25,
+        -1.1679999828338623,
+        0.550000011920929
+      ],
+      "rotation": [
+        0.0,
+        0.0872664600610733,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Caliper Red"
+      ]
+    },
+    "Rear_Left_Brake_Disc": {
+      "type": "MESH",
+      "location": [
+        -1.4800000190734863,
+        -1.0299999713897705,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Brushed Aluminum"
+      ]
+    },
+    "Rear_Left_Brake_Hat": {
+      "type": "MESH",
+      "location": [
+        -1.4800000190734863,
+        -1.062999963760376,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Carbon Fiber \u2014 Directional Weave"
+      ]
+    },
+    "Rear_Left_Brake_Line": {
+      "type": "MESH",
+      "location": [
+        -1.3650000095367432,
+        -0.9049999713897705,
+        0.7300000190734863
+      ],
+      "rotation": [
+        0.6196393370628357,
+        7.656757361473865e-08,
+        -2.488746166229248
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tail Lamp Red"
+      ]
+    },
+    "Rear_Left_Coil_Spring_1": {
+      "type": "MESH",
+      "location": [
+        -1.5399999618530273,
+        -0.8199999928474426,
+        0.6399999856948853
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Spring"
+      ]
+    },
+    "Rear_Left_Coil_Spring_2": {
+      "type": "MESH",
+      "location": [
+        -1.5399999618530273,
+        -0.8199999928474426,
+        0.699999988079071
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Spring"
+      ]
+    },
+    "Rear_Left_Coil_Spring_3": {
+      "type": "MESH",
+      "location": [
+        -1.5399999618530273,
+        -0.8199999928474426,
+        0.7599999904632568
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Spring"
+      ]
+    },
+    "Rear_Left_Coil_Spring_4": {
+      "type": "MESH",
+      "location": [
+        -1.5399999618530273,
+        -0.8199999928474426,
+        0.8199999928474426
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Spring"
+      ]
+    },
+    "Rear_Left_Coil_Spring_5": {
+      "type": "MESH",
+      "location": [
+        -1.5399999618530273,
+        -0.8199999928474426,
+        0.8799999952316284
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Spring"
+      ]
+    },
+    "Rear_Left_Damper": {
+      "type": "MESH",
+      "location": [
+        -1.5399999618530273,
+        -0.8199999928474426,
+        0.7799999713897705
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        -0.06981316953897476
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Engine Machined Metal"
+      ]
+    },
+    "Rear_Left_Damper_Cap": {
+      "type": "MESH",
+      "location": [
+        -1.5399999618530273,
+        -0.8199999928474426,
+        0.949999988079071
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        -0.06981316953897476
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Caliper Red"
+      ]
+    },
+    "Rear_Left_Hub": {
+      "type": "MESH",
+      "location": [
+        -1.4800000190734863,
+        -1.225000023841858,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Rear_Left_Hub_Cap": {
+      "type": "MESH",
+      "location": [
+        -1.4800000190734863,
+        -1.253000020980835,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Badge Gold"
+      ]
+    },
+    "Rear_Left_Lower_Control_Arm": {
+      "type": "MESH",
+      "location": [
+        -1.4800000190734863,
+        -0.8650000095367432,
+        0.5950000286102295
+      ],
+      "rotation": [
+        1.498938798904419,
+        -1.1071784911109717e-07,
+        1.0427219867706299
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Black"
+      ]
+    },
+    "Rear_Left_Rim_Base": {
+      "type": "MESH",
+      "location": [
+        -1.4800000190734863,
+        -1.149999976158142,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Brushed Aluminum"
+      ]
+    },
+    "Rear_Left_Sidewall_Bead": {
+      "type": "MESH",
+      "location": [
+        -1.4800000190734863,
+        -1.149999976158142,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.570796251296997,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tire Sidewall Ink"
+      ]
+    },
+    "Rear_Left_Spoke_1": {
+      "type": "MESH",
+      "location": [
+        -1.3241153955459595,
+        -1.2070000171661377,
+        0.6200000047683716
+      ],
+      "rotation": [
+        0.0,
+        -0.5235987901687622,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Rear_Left_Spoke_2": {
+      "type": "MESH",
+      "location": [
+        -1.4800000190734863,
+        -1.2070000171661377,
+        0.7099999785423279
+      ],
+      "rotation": [
+        0.0,
+        -1.5707963705062866,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Rear_Left_Spoke_3": {
+      "type": "MESH",
+      "location": [
+        -1.6358845233917236,
+        -1.2070000171661377,
+        0.6200000047683716
+      ],
+      "rotation": [
+        0.0,
+        -2.6179938316345215,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Rear_Left_Spoke_4": {
+      "type": "MESH",
+      "location": [
+        -1.6358845233917236,
+        -1.2070000171661377,
+        0.4399999976158142
+      ],
+      "rotation": [
+        0.0,
+        -3.665191411972046,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Rear_Left_Spoke_5": {
+      "type": "MESH",
+      "location": [
+        -1.4800000190734863,
+        -1.2070000171661377,
+        0.3499999940395355
+      ],
+      "rotation": [
+        0.0,
+        -4.71238899230957,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Rear_Left_Spoke_6": {
+      "type": "MESH",
+      "location": [
+        -1.3241153955459595,
+        -1.2070000171661377,
+        0.4399999976158142
+      ],
+      "rotation": [
+        0.0,
+        -5.759586334228516,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Rear_Left_Tire": {
+      "type": "MESH",
+      "location": [
+        -1.4800000190734863,
+        -1.0149999856948853,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.570796251296997,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Performance Rubber"
+      ]
+    },
+    "Rear_Left_Tire_Block_1": {
+      "type": "MESH",
+      "location": [
+        -1.094425082206726,
+        -1.156000018119812,
+        0.7419716119766235
+      ],
+      "rotation": [
+        0.0,
+        -0.5026548504829407,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tire Sidewall Ink"
+      ]
+    },
+    "Rear_Left_Tire_Block_2": {
+      "type": "MESH",
+      "location": [
+        -1.3180252313613892,
+        -1.156000018119812,
+        0.9391016364097595
+      ],
+      "rotation": [
+        0.0,
+        -1.19380521774292,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tire Sidewall Ink"
+      ]
+    },
+    "Rear_Left_Tire_Block_3": {
+      "type": "MESH",
+      "location": [
+        -1.6159675121307373,
+        -1.156000018119812,
+        0.9484648704528809
+      ],
+      "rotation": [
+        0.0,
+        -1.884955644607544,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tire Sidewall Ink"
+      ]
+    },
+    "Rear_Left_Tire_Block_4": {
+      "type": "MESH",
+      "location": [
+        -1.8515043258666992,
+        -1.156000018119812,
+        0.7657638192176819
+      ],
+      "rotation": [
+        0.0,
+        -2.576106071472168,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tire Sidewall Ink"
+      ]
+    },
+    "Rear_Left_Toe_Link": {
+      "type": "MESH",
+      "location": [
+        -1.5,
+        -0.8650000095367432,
+        0.6650000214576721
+      ],
+      "rotation": [
+        1.5875149965286255,
+        -1.2828338924464333e-07,
+        1.212025761604309
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Spring"
+      ]
+    },
+    "Rear_Left_Upper_Control_Arm": {
+      "type": "MESH",
+      "location": [
+        -1.4900000095367432,
+        -0.8650000095367432,
+        0.7599999904632568
+      ],
+      "rotation": [
+        1.8280081748962402,
+        -9.651090238094184e-08,
+        -0.8086497783660889
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Engine Machined Metal"
+      ]
+    },
+    "Rear_Right_Brake_Caliper": {
+      "type": "MESH",
+      "location": [
+        -1.25,
+        1.1679999828338623,
+        0.550000011920929
+      ],
+      "rotation": [
+        0.0,
+        0.0872664600610733,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Caliper Red"
+      ]
+    },
+    "Rear_Right_Brake_Disc": {
+      "type": "MESH",
+      "location": [
+        -1.4800000190734863,
+        1.0299999713897705,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Brushed Aluminum"
+      ]
+    },
+    "Rear_Right_Brake_Hat": {
+      "type": "MESH",
+      "location": [
+        -1.4800000190734863,
+        1.062999963760376,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Carbon Fiber \u2014 Directional Weave"
+      ]
+    },
+    "Rear_Right_Brake_Line": {
+      "type": "MESH",
+      "location": [
+        -1.3650000095367432,
+        0.9049999713897705,
+        0.7300000190734863
+      ],
+      "rotation": [
+        0.6196392774581909,
+        1.3610630844596017e-08,
+        -0.65284663438797
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tail Lamp Red"
+      ]
+    },
+    "Rear_Right_Coil_Spring_1": {
+      "type": "MESH",
+      "location": [
+        -1.5399999618530273,
+        0.8199999928474426,
+        0.6399999856948853
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Spring"
+      ]
+    },
+    "Rear_Right_Coil_Spring_2": {
+      "type": "MESH",
+      "location": [
+        -1.5399999618530273,
+        0.8199999928474426,
+        0.699999988079071
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Spring"
+      ]
+    },
+    "Rear_Right_Coil_Spring_3": {
+      "type": "MESH",
+      "location": [
+        -1.5399999618530273,
+        0.8199999928474426,
+        0.7599999904632568
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Spring"
+      ]
+    },
+    "Rear_Right_Coil_Spring_4": {
+      "type": "MESH",
+      "location": [
+        -1.5399999618530273,
+        0.8199999928474426,
+        0.8199999928474426
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Spring"
+      ]
+    },
+    "Rear_Right_Coil_Spring_5": {
+      "type": "MESH",
+      "location": [
+        -1.5399999618530273,
+        0.8199999928474426,
+        0.8799999952316284
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Spring"
+      ]
+    },
+    "Rear_Right_Damper": {
+      "type": "MESH",
+      "location": [
+        -1.5399999618530273,
+        0.8199999928474426,
+        0.7799999713897705
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.06981316953897476
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Engine Machined Metal"
+      ]
+    },
+    "Rear_Right_Damper_Cap": {
+      "type": "MESH",
+      "location": [
+        -1.5399999618530273,
+        0.8199999928474426,
+        0.949999988079071
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.06981316953897476
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Caliper Red"
+      ]
+    },
+    "Rear_Right_Hub": {
+      "type": "MESH",
+      "location": [
+        -1.4800000190734863,
+        1.225000023841858,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Rear_Right_Hub_Cap": {
+      "type": "MESH",
+      "location": [
+        -1.4800000190734863,
+        1.253000020980835,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Badge Gold"
+      ]
+    },
+    "Rear_Right_Lower_Control_Arm": {
+      "type": "MESH",
+      "location": [
+        -1.4800000190734863,
+        0.8650000095367432,
+        0.5950000286102295
+      ],
+      "rotation": [
+        1.4989385604858398,
+        1.0510399306440377e-07,
+        2.0988709926605225
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Black"
+      ]
+    },
+    "Rear_Right_Rim_Base": {
+      "type": "MESH",
+      "location": [
+        -1.4800000190734863,
+        1.149999976158142,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Brushed Aluminum"
+      ]
+    },
+    "Rear_Right_Sidewall_Bead": {
+      "type": "MESH",
+      "location": [
+        -1.4800000190734863,
+        1.149999976158142,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.570796251296997,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tire Sidewall Ink"
+      ]
+    },
+    "Rear_Right_Spoke_1": {
+      "type": "MESH",
+      "location": [
+        -1.3241153955459595,
+        1.2070000171661377,
+        0.6200000047683716
+      ],
+      "rotation": [
+        0.0,
+        -0.5235987901687622,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Rear_Right_Spoke_2": {
+      "type": "MESH",
+      "location": [
+        -1.4800000190734863,
+        1.2070000171661377,
+        0.7099999785423279
+      ],
+      "rotation": [
+        0.0,
+        -1.5707963705062866,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Rear_Right_Spoke_3": {
+      "type": "MESH",
+      "location": [
+        -1.6358845233917236,
+        1.2070000171661377,
+        0.6200000047683716
+      ],
+      "rotation": [
+        0.0,
+        -2.6179938316345215,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Rear_Right_Spoke_4": {
+      "type": "MESH",
+      "location": [
+        -1.6358845233917236,
+        1.2070000171661377,
+        0.4399999976158142
+      ],
+      "rotation": [
+        0.0,
+        -3.665191411972046,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Rear_Right_Spoke_5": {
+      "type": "MESH",
+      "location": [
+        -1.4800000190734863,
+        1.2070000171661377,
+        0.3499999940395355
+      ],
+      "rotation": [
+        0.0,
+        -4.71238899230957,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Rear_Right_Spoke_6": {
+      "type": "MESH",
+      "location": [
+        -1.3241153955459595,
+        1.2070000171661377,
+        0.4399999976158142
+      ],
+      "rotation": [
+        0.0,
+        -5.759586334228516,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Machined Chrome"
+      ]
+    },
+    "Rear_Right_Tire": {
+      "type": "MESH",
+      "location": [
+        -1.4800000190734863,
+        1.0149999856948853,
+        0.5299999713897705
+      ],
+      "rotation": [
+        1.570796251296997,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Performance Rubber"
+      ]
+    },
+    "Rear_Right_Tire_Block_1": {
+      "type": "MESH",
+      "location": [
+        -1.094425082206726,
+        1.156000018119812,
+        0.7419716119766235
+      ],
+      "rotation": [
+        0.0,
+        -0.5026548504829407,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tire Sidewall Ink"
+      ]
+    },
+    "Rear_Right_Tire_Block_2": {
+      "type": "MESH",
+      "location": [
+        -1.3180252313613892,
+        1.156000018119812,
+        0.9391016364097595
+      ],
+      "rotation": [
+        0.0,
+        -1.19380521774292,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tire Sidewall Ink"
+      ]
+    },
+    "Rear_Right_Tire_Block_3": {
+      "type": "MESH",
+      "location": [
+        -1.6159675121307373,
+        1.156000018119812,
+        0.9484648704528809
+      ],
+      "rotation": [
+        0.0,
+        -1.884955644607544,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tire Sidewall Ink"
+      ]
+    },
+    "Rear_Right_Tire_Block_4": {
+      "type": "MESH",
+      "location": [
+        -1.8515043258666992,
+        1.156000018119812,
+        0.7657638192176819
+      ],
+      "rotation": [
+        0.0,
+        -2.576106071472168,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tire Sidewall Ink"
+      ]
+    },
+    "Rear_Right_Toe_Link": {
+      "type": "MESH",
+      "location": [
+        -1.5,
+        0.8650000095367432,
+        0.6650000214576721
+      ],
+      "rotation": [
+        1.587515115737915,
+        -2.3761041134662264e-08,
+        1.9295672178268433
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Suspension Spring"
+      ]
+    },
+    "Rear_Right_Upper_Control_Arm": {
+      "type": "MESH",
+      "location": [
+        -1.4900000095367432,
+        0.8650000095367432,
+        0.7599999904632568
+      ],
+      "rotation": [
+        1.8280081748962402,
+        -9.802425182670049e-08,
+        -2.3329429626464844
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Engine Machined Metal"
+      ]
+    },
+    "Rear_View_Mirror": {
+      "type": "MESH",
+      "location": [
+        0.30000001192092896,
+        0.0,
+        1.309999942779541
+      ],
+      "rotation": [
+        0.1745329201221466,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Black Glass Display"
+      ]
+    },
+    "Rear_Windshield": {
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Smoked Smart Glass"
+      ]
+    },
+    "STEERING_INPUT_CTRL": {
+      "type": "EMPTY",
+      "location": [
+        0.4000000059604645,
+        -0.49000000953674316,
+        1.1799999475479126
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": []
+    },
+    "Steering_Wheel": {
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        1.570796251296997,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": "STEERING_INPUT_CTRL",
+      "materials": [
+        "Carbon Leather"
+      ]
+    },
+    "Tail_Light_Accent_-1": {
+      "type": "MESH",
+      "location": [
+        -2.4600000381469727,
+        -0.6000000238418579,
+        0.7799999713897705
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Indicator Amber"
+      ]
+    },
+    "Tail_Light_Accent_1": {
+      "type": "MESH",
+      "location": [
+        -2.4600000381469727,
+        0.6000000238418579,
+        0.7799999713897705
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Indicator Amber"
+      ]
+    },
+    "Tail_Light_Bar_-1": {
+      "type": "MESH",
+      "location": [
+        -2.450000047683716,
+        -0.6000000238418579,
+        0.7300000190734863
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tail Lamp Red"
+      ]
+    },
+    "Tail_Light_Bar_1": {
+      "type": "MESH",
+      "location": [
+        -2.450000047683716,
+        0.6000000238418579,
+        0.7300000190734863
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Tail Lamp Red"
+      ]
+    },
+    "Tail_Light_Housing_-1": {
+      "type": "MESH",
+      "location": [
+        -2.390000104904175,
+        -0.6000000238418579,
+        0.7300000190734863
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Soft Touch Black"
+      ]
+    },
+    "Tail_Light_Housing_1": {
+      "type": "MESH",
+      "location": [
+        -2.390000104904175,
+        0.6000000238418579,
+        0.7300000190734863
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": null,
+      "materials": [
+        "Soft Touch Black"
+      ]
+    },
+    "Wheel_Hub": {
+      "type": "MESH",
+      "location": [
+        0.0,
+        -0.02499997615814209,
+        0.0
+      ],
+      "rotation": [
+        1.570796251296997,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": "STEERING_INPUT_CTRL",
+      "materials": [
+        "Badge Gold"
+      ]
+    },
+    "Wheel_Spoke_0": {
+      "type": "MESH",
+      "location": [
+        0.09999999403953552,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": "STEERING_INPUT_CTRL",
+      "materials": [
+        "Brushed Aluminum"
+      ]
+    },
+    "Wheel_Spoke_2.0943951023931953": {
+      "type": "MESH",
+      "location": [
+        -0.050000011920928955,
+        0.0,
+        0.08660256862640381
+      ],
+      "rotation": [
+        -0.0,
+        -2.094395160675049,
+        -0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": "STEERING_INPUT_CTRL",
+      "materials": [
+        "Brushed Aluminum"
+      ]
+    },
+    "Wheel_Spoke_4.1887902047863905": {
+      "type": "MESH",
+      "location": [
+        -0.050000011920928955,
+        0.0,
+        -0.08660244941711426
+      ],
+      "rotation": [
+        -0.0,
+        2.094395160675049,
+        -0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": "STEERING_INPUT_CTRL",
+      "materials": [
+        "Brushed Aluminum"
+      ]
+    }
+  }
+}
