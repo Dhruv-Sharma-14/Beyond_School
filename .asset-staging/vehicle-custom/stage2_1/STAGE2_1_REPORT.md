@@ -11,16 +11,16 @@
 - `driver_eye_stage2_1.png`
 - `dashboard_controls_stage2_1_close.png`
 - `cockpit_overall_stage2_1.png`
-- `create_stage2_1_refinement.py`
+- `create_stage2_1_dashboard.py`
 
 The original blockout, Revisions 1–5, and the Stage 2 source remain unchanged.
 
 ## Geometry changes
 
-- Replaced the broad Stage 2 dashboard shell and fascia with overlapping, radiused upper/lower shells, a recessed contour inset, and a continuous accent rail.
-- Rebuilt the instrument binnacle as a deeper hood with a recessed bezel, dark replaceable display surface, and four small dial/tick details instead of two white discs.
-- Integrated the centre stack into the dashboard with a softened surround, recessed neutral infotainment surface, restrained `READY` startup mark, separate vents and directional slats.
-- Rebuilt the climate-control panel and knobs as a coherent horizontal control bank.
+- Replaced the broad Stage 2 dashboard shell and fascia with multi-section X/Z profile meshes swept across the cabin width, smooth shading, profile bevels, a recessed contour inset, and a continuous accent rail.
+- Rebuilt the instrument binnacle as a deeper glare-shield hood with a recessed bezel pocket. The cluster surface is at `X=0.435 m`, approximately `53 mm` deeper than the Stage 2 `X=0.382 m` surface, with replaceable dial/tick details instead of two white discs.
+- Integrated the centre stack into the dashboard with a softened surround yawed `-4°` toward the RHD driver, a recessed neutral infotainment surface, restrained `READY` startup mark, recessed vent surround, and thin directional slats.
+- Rebuilt the climate-control panel as a recessed trough with stepped rotary faces and separate outer grip rings.
 - Reshaped the centre tunnel support beneath the gear selector and parking brake.
 - Retained glovebox seam, steering-column shroud, lower footwell trim, and pedal surfaces with softened transitions.
 - Final PBR materials, instrument graphics, and lighting remain deferred to Stage 3.

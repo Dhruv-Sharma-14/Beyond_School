@@ -52,6 +52,50 @@ def cube(name, location, dimensions, material, bevel=0.0):
     return obj
 
 
+def swept_profile(name, y_sections, profile, material, bevel=0.0):
+    verts = []
+    count = len(profile)
+    for y, x_offset, z_offset in y_sections:
+        verts.extend((x + x_offset, y, z + z_offset) for x, z in profile)
+    faces = []
+    for section in range(len(y_sections) - 1):
+        base = section * count
+        next_base = (section + 1) * count
+        for point in range(count - 1):
+            faces.append((base + point, base + point + 1, next_base + point + 1, next_base + point))
+    faces.append(tuple(range(count - 1, -1, -1)))
+    last = (len(y_sections) - 1) * count
+    faces.append(tuple(last + point for point in range(count)))
+    mesh = bpy.data.meshes.new(name + "_Mesh")
+    mesh.from_pydata(verts, [], faces)
+    mesh.update()
+    obj = bpy.data.objects.new(name, mesh)
+    bpy.context.scene.collection.objects.link(obj)
+    obj.data.materials.append(material)
+    for poly in mesh.polygons:
+        poly.use_smooth = True
+    if bevel:
+        modifier = obj.modifiers.new("Stage2_1_ProfileBevel", "BEVEL")
+        modifier.width = bevel
+        modifier.segments = 3
+    return obj
+
+
+def torus(name, location, major, minor, material, rotation=(0.0, 0.0, 0.0)):
+    bpy.ops.mesh.primitive_torus_add(
+        major_radius=major,
+        minor_radius=minor,
+        major_segments=40,
+        minor_segments=10,
+        location=location,
+        rotation=rotation,
+    )
+    obj = bpy.context.object
+    obj.name = name
+    obj.data.materials.append(material)
+    return obj
+
+
 def cylinder(name, location, radius, depth, material, rotation=(0.0, 0.0, 0.0), vertices=32):
     bpy.ops.mesh.primitive_cylinder_add(
         vertices=vertices,
@@ -154,29 +198,39 @@ metal = mat("STAGE2_1_ControlMetal", (0.26, 0.27, 0.27), 0.3)
 
 # Sculptural dashboard layers. Overlapping radiused shells form a continuous
 # shoulder instead of a stack of independent cuboids.
-upper = cube("DASH_UpperShell", (0.72, 0.0, 0.91), (0.42, 1.60, 0.18), soft, 0.11)
+upper = swept_profile(
+    "DASH_UpperShell",
+    [(-0.80, 0.035, 0.00), (-0.46, 0.00, 0.015), (0.0, -0.015, 0.03), (0.46, 0.0, 0.015), (0.80, 0.035, 0.00)],
+    [(0.49, 0.80), (0.53, 0.88), (0.64, 0.96), (0.78, 0.98), (0.88, 0.91), (0.84, 0.84)],
+    soft,
+    0.025,
+)
 upper["design_role"] = "Continuous swept upper dashboard shoulder"
-upper.rotation_euler[1] = math.radians(-3.0)
-lower = cube("DASH_LowerFascia", (0.66, 0.0, 0.67), (0.34, 1.58, 0.30), fascia, 0.10)
+lower = swept_profile(
+    "DASH_LowerFascia",
+    [(-0.79, 0.03, 0.0), (-0.45, 0.0, 0.0), (0.0, -0.02, 0.0), (0.45, 0.0, 0.0), (0.79, 0.03, 0.0)],
+    [(0.50, 0.52), (0.53, 0.66), (0.62, 0.75), (0.78, 0.77), (0.84, 0.68), (0.81, 0.55)],
+    fascia,
+    0.022,
+)
 lower["design_role"] = "Shaped lower fascia with footwell transition"
-lower.rotation_euler[1] = math.radians(3.0)
 rail = cube("DASH_AccentRail", (0.49, 0.0, 0.89), (0.035, 1.43, 0.045), trim, 0.02)
-rail.rotation_euler[1] = math.radians(-3.0)
+rail.rotation_euler[2] = math.radians(-2.0)
 cube("DASH_UpperContourInset", (0.49, 0.0, 0.82), (0.028, 1.26, 0.09), dark, 0.035)
 
 # Driver binnacle: hood, recessed bezel, and replaceable instrument surfaces.
 binnacle = cube("DASH_InstrumentBinnacle", (0.535, -0.455, 1.135), (0.23, 0.42, 0.18), dark, 0.075)
 binnacle.rotation_euler[1] = math.radians(-4.0)
 binnacle["design_role"] = "Recessed instrument binnacle"
-bezel = cube("DASH_InstrumentClusterBezel", (0.405, -0.455, 1.135), (0.032, 0.36, 0.17), trim, 0.035)
+bezel = cube("DASH_InstrumentClusterBezel", (0.405, -0.455, 1.135), (0.07, 0.36, 0.17), trim, 0.035)
 bezel.rotation_euler[1] = math.radians(-4.0)
-cluster = cube("DASH_InstrumentCluster", (0.382, -0.455, 1.135), (0.014, 0.30, 0.125), glass, 0.025)
+cluster = cube("DASH_InstrumentCluster", (0.435, -0.455, 1.135), (0.014, 0.30, 0.125), glass, 0.025)
 cluster.rotation_euler[1] = math.radians(-4.0)
 cluster["display_placeholder"] = "Replaceable runtime instrument surface"
 for index, y in enumerate((-0.535, -0.375)):
     dial = cylinder(
         "DASH_ClusterDial_%02d" % index,
-        (0.363, y, 1.135),
+        (0.416, y, 1.135),
         0.043,
         0.008,
         mark,
@@ -195,12 +249,12 @@ for index, y in enumerate((-0.535, -0.375)):
 # Integrated centre stack with a soft surround, recessed display, vents, and
 # climate panel following the fascia rather than floating in front of it.
 stack = cube("CONSOLE_CentreStack", (0.67, 0.0, 1.02), (0.28, 0.52, 0.57), soft, 0.085)
-stack.rotation_euler[1] = math.radians(2.0)
+stack.rotation_euler[2] = math.radians(-4.0)
 stack["design_role"] = "Integrated centre-stack surround"
 frame = cube("CONSOLE_InfotainmentFrame", (0.505, 0.0, 1.22), (0.024, 0.37, 0.22), trim, 0.04)
-frame.rotation_euler[1] = math.radians(2.0)
+frame.rotation_euler[2] = math.radians(-4.0)
 screen = cube("CONSOLE_InfotainmentScreen", (0.488, 0.0, 1.22), (0.012, 0.315, 0.16), glass, 0.02)
-screen.rotation_euler[1] = math.radians(2.0)
+screen.rotation_euler[2] = math.radians(-4.0)
 screen["display_placeholder"] = "Neutral replaceable infotainment surface"
 text("CONSOLE_InfotainmentMark", "READY", (0.478, 0.0, 1.22), 0.045, mark)
 
@@ -217,6 +271,11 @@ for index, y in enumerate((-0.16, 0.16)):
         )
         sl["interaction_role"] = "Vent directional slat"
 
+# Recessed surrounds prevent the vents and hazard from reading as floating
+# blocks on the fascia.
+cube("CONSOLE_VentSurround", (0.455, 0.0, 1.015), (0.035, 0.43, 0.18), fascia, 0.045)
+cube("CONSOLE_HazardRecess", (0.452, 0.0, 1.065), (0.035, 0.17, 0.09), dark, 0.025)
+
 # Keep the required hazard object names stable by moving the visible Stage 2
 # controls aside only through legacy hiding, then rebuilding them here.
 hazard_pivot = cylinder("BTN_HazardSwitch_Pivot", (0.445, 0.0, 1.065), 0.032, 0.028, rubber, rotation=(0.0, math.pi / 2, 0.0))
@@ -232,12 +291,14 @@ for index, y in enumerate((-0.15, 0.0, 0.15)):
     knob = cylinder("CTRL_ClimateKnob_%02d" % index, (0.447, y, 0.87), 0.047, 0.03, metal, rotation=(0.0, math.pi / 2, 0.0))
     pivot_metadata(knob, (0.447, y, 0.87), "Rotary climate-control knob")
     knob["interaction_axis"] = "local X rotation"
+    torus("CTRL_ClimateKnob_%02d_GripRing" % index, (0.427, y, 0.87), 0.052, 0.008, trim, rotation=(0.0, math.pi / 2, 0.0))
+    cylinder("CTRL_ClimateKnob_%02d_InnerFace" % index, (0.423, y, 0.87), 0.030, 0.008, dark, rotation=(0.0, math.pi / 2, 0.0))
     cube("CTRL_ClimateMark_%02d" % index, (0.424, y, 0.914), (0.008, 0.012, 0.016), mark, 0.003)
 
 # A tapered-looking console stack supports the selector and brake rather than
 # leaving them on an isolated flat tunnel.
 console = cube("CONSOLE_CentreTunnel", (0.02, 0.08, 0.43), (1.18, 0.46, 0.16), fascia, 0.075)
-console.rotation_euler[1] = math.radians(-2.0)
+console.rotation_euler[2] = math.radians(-2.0)
 gear_base = cube("CONSOLE_GearSelectorBase", (0.10, 0.08, 0.54), (0.25, 0.21, 0.09), trim, 0.04)
 gear_pivot = bpy.data.objects.get("CONSOLE_GearSelector_Pivot")
 if gear_pivot is None:
